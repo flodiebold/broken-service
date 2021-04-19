@@ -16,7 +16,7 @@ class BreakMeController {
     val counter = AtomicLong()
 
 
-    tailrec fun havefun() {
+    final tailrec fun havefun() {
         "I can do lots of strings ${counter.get()}+1=${counter.incrementAndGet()}"
         havefun()
     }
